@@ -20,7 +20,6 @@ h1, h2, h3{
     font-family: "Fixedsys";
     color:#2F9658;
     font-size:20px;
-    text-transform: uppercase;
     line-height:140%;
 
 }
@@ -120,15 +119,13 @@ h2:hover {
     justify-content: center;
     align-items: center;
     padding: 20px;
+    overflow: hidden; /* Prevent scrolling within the sidebar */
 }
 
 .intro-content {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    text-align: right;
     max-width: 600px;
-    height: 300px; /* Fix the height */
     overflow: hidden; /* Prevent growing */
 }
 
@@ -168,6 +165,7 @@ h2:hover {
 
     .main {
         width:70%;
+        margin-left:1rem;
     }
 
     h1, h2, h3{
@@ -182,8 +180,8 @@ h2:hover {
         font-size:16px;
     }
 
-    .landing-cover{
-        padding: 60px;
+    .intro-content{
+        padding:0 1rem;
     }
 
 }
