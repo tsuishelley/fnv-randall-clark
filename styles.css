@@ -109,7 +109,7 @@ h2:hover {
 
 
 .landing-cover {
-    height: 100vh;
+    height: 100dvh;
     display: flex;
     flex-direction:column;
     justify-content: center;
@@ -180,6 +180,5 @@ h2:hover {
     .intro-content{
         padding-left:1.5rem;
         padding-right:1.5rem;
-        max-height:100vh;
     }
 }
