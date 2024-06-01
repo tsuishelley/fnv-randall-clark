@@ -16,11 +16,13 @@ body {
     cursor:url(assets/cursor.svg), auto;
 }
 
-h1, h2{
+h1, h2, h3{
     font-family: "Fixedsys";
     color:#2F9658;
     font-size:20px;
     line-height:140%;
+    font-weight: normal; /* Add this line to reset font weight */
+
 
 }
 
@@ -164,6 +166,8 @@ h2:hover {
 
     h1, h2{
         font-size:16px;
+        font-weight: normal; /* Add this line to reset font weight */
+
     }
 
     p {
