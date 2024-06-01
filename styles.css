@@ -87,7 +87,7 @@ h2:hover {
 .sidebar {
     position: -webkit-sticky; /* For Safari */
     position: sticky;
-    height: 100vh; /* Full viewport height */
+    height: 100dvh; /* Full viewport height */
     overflow: hidden; /* Prevent scrolling within the sidebar */
     width: 40%;
     top:0;
@@ -97,7 +97,7 @@ h2:hover {
 .wrapper {
     display: flex;
     justify-content: space-between;
-    min-height: 100vh; /* Ensure the wrapper takes full height */
+    min-height: 100dvh; /* Ensure the wrapper takes full height */
 
 }
   
