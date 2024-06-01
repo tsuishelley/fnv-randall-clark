@@ -65,6 +65,8 @@ p {
 
 a {
     text-decoration: none;
+    cursor:url(assets/cursor.svg), auto;
+
 }
 
 h2:hover {
