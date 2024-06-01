@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Randall Clark's Journal</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+            <a href="landing.html"><h1>Randall Clark's Journal</h1></a>
+            <div class="line"></div>
+            <div>
+                <h2 data-tab="2077" class="tab-link">>&nbsp2077</h2>
+            </div>
+            <div>
+                <h2 data-tab="2078" class="tab-link">>&nbsp2078</h2>
+            </div>
+            <div>
+                <h2 data-tab="2083" class="tab-link">>&nbsp2083</h2>
+            </div>
+            <div>
+                <h2 data-tab="2084" class="tab-link">>&nbsp2084</h2>
+            </div>
+            <div>
+                <h2 data-tab="2095" class="tab-link">>&nbsp2095</h2>
+            </div>
+            <div>
+                <h2 data-tab="2096" class="tab-link">>&nbsp2096</h2>
+            </div>
+            <div>
+                <h2 data-tab="2096(II)" class="tab-link">>&nbsp2096(II)</h2>
+            </div>
+            <div>
+                <h2 data-tab="2097" class="tab-link">>&nbsp2097</h2>
+            </div>
+            <div>
+                <h2 data-tab="2100" class="tab-link">>&nbsp2100</h2>
+            </div>
+            <div>
+                <h2 data-tab="2101" class="tab-link">>&nbsp2101</h2>
+            </div>
+            <div>
+                <h2 data-tab="2108" class="tab-link">>&nbsp2108</h2>
+            </div>
+            <div>
+                <h2 data-tab="2113" class="tab-link">>&nbsp2113</h2>
+            </div>
+            <div>
+                <h2 data-tab="2123" class="tab-link">>&nbsp2123</h2>
+            </div>
+            <div>
+                <h2 data-tab="2124" class="tab-link">>&nbsp2124</h2>
+            </div>
+        </div>
+        <div class="main" id="main-content">
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const tabs = document.querySelectorAll('.tab-link');
+            const mainContent = document.getElementById('main-content');
+
+            const content = {
+                '2077': `
+                    <p>October 28th<br><br>Outside it's like nothing happened. Sky looks wrong, that's all.<br><br>Hike back to overturned NatGuard
+                        truck near Toquerville? After blisters heal, maybe.<br><br>Looks like USGS team was researching something here in cave. Cleared out
+                        when bombs fell, left equipment behind. Probably thought they had families to run back to.<br><br>October 29th<br><br>Char,
+                        must've said this out loud a thousand times walking here. Maybe writing it will feel more like you heard.<br><br>You were right.<br><br>
+                        I was north of Spanish Fork. Took the 77 along Provo Bay to steer clear of town. Would've been home in an hour. Engine died, truck
+                        just stopped. So did a Chryslus in other lane. Knew right away.
+                        <br><br>First nuke hit SLC inside a minute. I was looking South — Lucky Man! Flash behind me so bright world looked on fire. Old couple from the 
+                        Chryslus starts screaming they can't see.<br><br>Didn't watch you die, Char. Saved my eyes. Counted 12 more flashes next 7 minutes. Ground
+                        shook each time, 18 seconds later.<br><br>When nothing hit for half hour, took a look. Globe of fire where you and Alex died. Didn't kid myself.
+                        <br><br>Didn't know what to do. Grabbed my pack and rifle.<br><br>Saw to the old couple. Sat them up against car, let them hold and comfort
+                        each other. Told them I was going to get help, everything be okay. One bullet through both heads. Instant.<br><br>Five day hike back to Zion. <br><br>You
+                        told me. Stop running off to the wild. Man belongs with his family.<br><br>You were right. You were right. You were right. You were right. Wasn't
+                        there to hold you and my boy. Died without me. Never touch you or him again.<br><br>Should shoot myself. What I deserve.
+                        <br><br>Can't. Maybe soon.<br><br>October 31st<br><br>Black rain falling outside. Geiger jumping. Should let it kill me but bottling water
+                        from back of cave all the same.<br><br>November 2nd<br><br>Sounds dead outside, but can't look. Geiger goes lethal 15 feet from cave mouth.<br><br>
+                        Do the math. Radiation goes down before water runs out or I never leave this cave.
+                `,
+                '2078': `
+                    <p>January 1st<br><br>Happy New Year.<br><br>Two months in cave. Still lethal outside. Don't get it. In army they said 2-4 weeks cleared fallout. <br><br>
+                        Less than a month's water left. Been mopping condensation off cave walls, wringing shirt into bottles. Trading calories for H20. Food stocks holding. 
+                        Thanks, USGS. <br><br>If there was even a chance I'd see the two of you again, I'd run outside.<br><br>January 10th<br><br>Sounded like windstorm out there for
+                        2 days. Radiation down 500. What happened?<br><br>January 15th<br><br>Took a peek. Snow. It glows green.<br><br>January 28th<br><br>Radiation low enough
+                        I could risk short exposure outside.<br><br>More important, cave stream now drinkable if I use Rad drugs.<br><br>January 30th<br><br>There is nothing
+                        alive out there.</p>
+                `,
+                '2083': `
+                    <p>May 5th<br><br>The comeback goes on.<br><br>Add prickly pear to list of survivors with honey mesquite, and banana yucca. Odd nodules / mutations but safe to eat.
+                        Harvesting oh so careful, never take more than a fifth. Mouth waters every time I'm about to eat something that isn't from a can.<br><br>May 7th<br><br>Clouds of those
+                        stinging flies near fallen tree I call The Napper. Little flashes in the cloud. Something dragonfly-sized that zaps them midair then scoops them up. Something new.<br><br>
+                        May 19th<br><br>Bighorn Sheep! A family — ram, ewe, and little one<br><br>Fucking Goddammit<br><br>May 20th<br><br>The sheep were different. Brawny. Ewe had curved horns
+                        just like the ram.<br><br>Seen some tiny lizards but this is first time seen animals that big.<br><br>Fingers crossed. 5-10 years breeding, fresh meat, hides, horns.
+                        <br><br>I know it's time to go back, Char. When winter has passed.</p>
+                `,
+                '2084': `
+                <p>June 14th<br><br>
+                        Just got back. Tired. Good scrounging along the way. Ended up dragging back a cart of stuff.<br><br>
+                        Write tomorrow. Sleep.<br><br>
+                        June 15th<br><br>
+                       Departed April 10th. Walk to SLC took 15 days. Would've been 7-9 back in the old days, but had to circle pockets of radiation and foraged along way.<br><br>
+                        Don't know what I was thinking. Imagined I'd find my house, dig through rubble, find - something. Your bones I hoped, and Little Nut's. Would've buried them. Here in Zion maybe.<br><br>
+                        SLC is mostly craters. Warped steel girders where highrises sat. Mounds of bricks.<br><br>
+                       Never found our house. Didn’t even find street. What wasn’t a crater was scorched clean.<br><br>
+                        Want to believe it was fast, a flash, both of you vaporized. Lies to make me feel better. I'll never know. Which part of city got hit first? Northeast and you both died in a blink. Farther away and you burned alive screaming or the blast broken glass and bits of brick and wood splinters shredding you like hamburger. Look at it coward and listen don't turn away face it. If you'd been brave lucky man you would've found a spot and blown your brains out.<br><br>
+                       But not you. You took your time walking back, made a shopping trip of it. Scrounger.<br><br>
+                        The truck was still there on the 77 north of Spanish Fork. The Chryslus too, but no sign of the old couple's bones.<br><br>
+                        Outside Nephi I caught a trail. Three men, tracks heading toward Fountain Green. Thought about following but didn't. Stupid fantasy of friends, more likely cannibals.<br><br>
+                        June 20th<br><br>
+                        Took two days to build door and electrify it.<br><br>
+                        No soliciting, assholes. Home sweet fucking home.</p>
+                `,
+                '2095' : `
+                <p>September 20th<br><br>
+                        I count 28 of them. 11 adult males, 8 females, 9 children aged 2 - 10. Some rifles and pistols in bad repair. Old world clothes, ratty.<br><br>
+                        September 22nd<br><br>
+                        Got close enough last night to hear them talk. Spanish, I think. From Mexico?<br><br>
+                        Heard them say "paradeeso" a bunch. Think that means paradise. Here to stay, then.<br><br>
+                        Seem harmless. SEEM.<br><br>
+                        October 5th<br><br>
+                        The one I call "Maria" is pregnant. Think the father is "Jose" but she spends a lot of time with "Pablo" too.<br><br>
+                        October 7th<br><br>
+                        "Pedro" ran out to pee in the stream and would've seen me if he looked to his left. Too close. Need to give them space.<br><br>
+                        November 10th<br><br>
+                        "Jose" broke his leg chasing a bighorn. Too far from camp for them to hear. Told myself to leave it be but couldn't. 300 yards from their camp did my best Jose screaming imitation until a bunch of them came looking, then strung them along to the crest where they could hear the real Jose.<br><br>
+                        Probably useless. Compound fracture, broke the skin.<br><br>
+                        November 11th<br><br>
+                        "Infec-shee-own." So many goddamn words nearly the same, think I'd be fluent. But anyway Jose's leg has got it so he's going to die. Nature for you. Of course they're giving prayer a try.<br><br>
+                        November 12th<br><br>
+                        Left bottle of antibiotics on a rock outside their camp last night. They thanked God (Dee-os) of course. As though that asshole saw fit to burn the world but still cared enough to leave some medicine on a rock.<br><br>
+                        November 15th<br><br>
+                        Jose will always limp but otherwise he'll be okay. Good deed for the month.<br><br>
+                        Will they make it through the winter?</p>
+                `,
+                '2096' : `
+                <p>February 11th<br><br>
+                        Fuckers killed all the men. I think they would've taken the women alive but Maria and Selena opened fire and some of the others went for their guns so they shot them down and some of the kids with them.<br><br>
+                        If I could've warned them.<br><br>
+                        February 12th<br><br>
+                        Elena and Carmen and 5 children still alive, being kept in a pen.<br><br>
+                        There are more than 100 of these assholes in blue suits. Every suit says "22" on the back. Why? Armed to the teeth with submachine guns, pistols. Estimate 60% male. Everyone seems to follow the dark-haired guy but can't get close enough to tell. Assholes are disciplined - patrols, sentries - they mean business.<br><br>
+                        Say I go in at night and get the women and children out. Where to next?<br><br>
+                        But I have to get them out. Have to.<br><br>
+                        February 13th<br><br>
+                        Recon during night. Well-organized, sentries along most approaches, but stream not covered.<br><br>
+                        Are they sick? Lots of coughing fits. Tuberculosis?<br><br>
+                        Women and children still in pen. Will try to infiltrate by stream tomorrow night.<br><br>
+                        February 14th<br><br>
+                        They ate them.<br><br>
+                        February 19th<br><br>
+                        Ambush along riverside trail. 6 males killed. Heard their coughing a mile away.<br><br>
+                        Used their grenades to booby-trap bodies, kept half. Secured 6 SMGs, 500 rounds 10mm, 6 frags.<br><br>
+                        February 20th<br><br>
+                        Ambush along riverside trail. 2 males died checking bodies. Killed 2 more with rifle. Shot 1 through calf and let asshole crawl off to spread message. Coughed like I'd shot him through lungs.<br><br>
+                        February 23rd<br><br>
+                        Ambush half-mile east of coal pits wash. 8 males killed.</p>
+                `,
+                '2096(II)' : `
+                <p>February 28th<br><br>
+                        Ambush in the narrows. 6 males killed. Took a 10mm through thigh, steel jacket, missed femoral. Lucky. Used tourniquet to make sure no blood spattered on rocks back to cave. Have set traps all along entrance passage but if they find me it will be matter of time. Still, 24 confirmed kills in 10 days = at least 1/3rd their combat force, not bad for an old man.<br><br>
+                        March 2nd<br><br>
+                        Lucky lucky lucky lucky. Patrol was small - 3 men. Screaming woke me - point man caught under deadfall. Panic fire ricocheted into the cave, almost hit me. Crawled forward and killed them all with SMGs. Nearly used frags, stupid, finger in pin when remembered ricochets.<br><br>
+                        Leaving at once. No other patrols in area but they'll be searching narrows for these 3. Taking as much food as I can drag with me and heading to cave south.</p>
+
+                `,
+                '2097' : `
+                <p>January 13th<br><br>
+                        The Coughers are gone finally. All 34 that still lived. Ate their dead for strength, then struck out SE.<br><br>
+                        Victory. 10 months of killing. All I feel is cold.<br><br>
+                        They deserved every goddamn bit of it.<br><br>
+                        January 17th<br><br>
+                        Thought I was dreaming but the screams were real. For a moment thought they'd tricked me, just pretended to leave Zion, then sent a patrol to track me down. But the screams were a woman's.<br><br>
+                        Edged around corner in passageway to have a look. One Vaulter, ankle deep in bear trap. Leveled my SMG but the way she was crying stopped me.<br><br>
+                        How she screamed when she saw me. Been their boogey man a long time.<br><br>
+                        Name's Sylvie. Claims she ran away from them. Calls them evil people, "children of the devil." Turns out they were sick after all, something they caught in a Vault they lived in. She never came down with it (yet).<br><br>
+                        So help me, I've wound up being her nurse.<br><br>
+                        January 18th<br><br>
+                        Her story matches what I learned from my "interrogations" last year, but according to her - let's just say it was bad to be a woman in that group. So when they left, she slipped away.<br><br>
+                        She knows next to nothing about living outside a Vault. Says she wants to learn.</p>
+                `,
+                '2100' : `
+                <p>September 9th<br><br>
+                        Never been so scared in my life.<br><br>
+                        Canada wasn't scary, just sickening, the criminality of it.<br><br>
+                        The end of the world wasn't scary. When I knew you and Alex were dead, I didn't have anything left to be scared about. I just went on for some reason.<br><br>
+                        I wasn’t scared fighting the Vaulters. It was like I kept daring them to finish me. When I killed them, I think it was the closest I came to feeling happy in years.<br><br>
+                        Sylvie is pregnant. And I am terrified.<br><br>
+                        Ridiculous old man. A father again at 47. In this world?<br><br>
+                        She's so excited and so - trusting. Says it's God's will that we have this child. Like nothing can go wrong.<br><br>
+                        You see, Char, she doesn’t know about you and Alex. Never told her. Almost did sometimes but what you and I had, it seemed wrong to share it.<br><br>
+                        More like an old man not wanting his young wife to know how he failed the one who come before her.<br><br>
+                        Hiking into Toquerville for medical books and supplies. This will be done right.<br><br>
+                        I'm sorry, Char. Hope you can forgive me.</p>
+                `,
+                '2101' : `
+                <p>March 5th<br><br>
+                        Baby was breech. Would've been a son. Michael.<br><br>
+                        Did my best to turn him. Failed. Must've done Caesarean too late. Had to put Sylvie out and she never woke up.<br><br>
+                        Buried them south of the narrows.<br><br>
+                        Well. This time I was by their side. So much better.<br><br>
+                        I think I can finally do it. Blow my fucking brains out all over this goddamn cave.</p>
+                `,
+                '2108' : `
+                <p>August 22nd<br><br>
+                        10 sets of tracks 1/2 mile NE of canyon entrance. Barefoot???<br><br>
+                        August 23rd<br><br>
+                        Saw them through scope. Corpses walking around. Finally gone crazy. Dementia maybe.<br><br>
+                        August 24th<br><br>
+                        I'm not crazy, they're real. Goddammit they are real.<br><br>
+                        Rushed me the moment they saw me, snarling like animals. They look like corpses but don't smell rotted.<br><br>
+                        I'll be putting them out of their misery. Doing for them what I never could for myself.<br><br>
+                        September 3rd<br><br>
+                        The last of them. All gone.</p>
+                `,
+                '2113' : `
+                <p>February 5th<br><br>
+                        Happy birthday to me, happy birthday to me, happy birthday you useless old dinosaur, happy birthday to me.<br><br>
+                        Happy 60th. What do you get a man who has everything?<br><br>
+                        A bottle of whiskey and a 12 gauge slug through the roof of the mouth! Whoo!<br><br>
+                        Come now. What do I have to do to prove to myself that I've lived long enough?<br><br>
+                        I'm a shriveled old man. White beard. Seen enough sunrises and sunsets. Saw the big sunset, been hanging on through the long night 36 years now. Ridiculous.<br><br>
+                        Not kidding myself into thinking there's anything on the other side of this. Fine. Things weren't so bad before I was born.<br><br>
+                        Char and Alex. Sylvie and Michael-who-could've-been.<br><br>
+                        Thoughts of the beloved dead before dying.<br><br>
+                        Goodbye, Zion.<br><br>
+                        February 6th<br><br>
+                        Fucking didn't do it, coward as usual. Maybe two bottles next year.</p>
+                `,
+                '2123' : `
+                <p>April 25th<br><br>
+                        24 of them, half boys, half girls. Youngest is 8 maybe, oldest 13-14. Dirty and scrawny, been on foot a long time. Children's crusade.<br><br>
+                        Struck camp on nearly the same spot as los mexicanos. 30 years and a lifetime ago.<br><br>
+                        I've spent 2 nights listening to them. English. Literate. One of them reads stories while the little ones fall asleep.<br><br>
+                        They escaped someplace they call "The School" but can't figure out where it was. When they want a little one to behave they tell him to stop or "The Principal will get you."<br><br>
+                        Principal better not show up or I'll blow his goddamn head off. I can still shoot straight.</p>
+                `,
+                '2124' : `
+                <p>January 2nd<br><br>
+                        I've been leaving notes for them, and gifts.<br><br>
+                        They like the books. Started with stories but moved on to weapons manuals, medical books, practical stuff.<br><br>
+                        In the notes, well it's embarrassing, almost like those cards people used to give to each other, everything sweet and loving. I tell them to read and to learn and to make the most of their new home. I tell them that I'm giving them Zion as a gift to make up for all the sorrows of their lives so far and all the sorrows man has visited on man. I tell them to be kind to each other and modest. I tell them never to hurt each other but that if someone else comes along and tries to hurt them to strike back with righteous anger. Stuff like that. I sign every note "The Father," because well, just because.<br><br>
+                        January 18th<br><br>
+                        Have I mentioned that I'm dying?<br><br>
+                        Mind's still sharp. Lungs are the problem. Might be cancer. Cough's been getting worse for months, finally there's blood in it. Getting harder to visit my little friends, breath's so short.<br><br>
+                        I've given away most of what I own. They'll find the rest in the caves when they get a little older.<br><br>
+                        I don't want them to find me though. “The Father" is a broke-down old man? Disappointment.<br><br>
+                        It's time. I don't want another birthday.<br><br>
+                        January 23rd<br><br>
+                        It's cold enough that I won't last long on the high mound up next to Red Gate. I think I've got enough breath left in me to make it. I'll just lie down and stare at the sky. Feels right.<br><br>
+                        I hope they'll do well. I hope no harm comes to them, from within or without. Did my best to prepare them with the last few notes. Said something kind about each one of them, what makes each one special. Told them The Father was pleased by their kind natures and that it would be up to them to handle things on their own from now on, that I'd be silent but still watching and still caring.<br><br>
+                        Lying, then. Oh yes.<br><br>
+                        Lied to you, Char. And Alex. And Sylvie. Told you I'd be with you forever. But I wouldn't go back and unsay it once if I could.<br><br>
+                        What was the point of it all? So many failures.<br><br>
+                        But I never forgot your face. Or Little Nut's. Or (sorry) Sylvie's. They used to say that happened after a while but it never did for me.<br><br>
+                        Maybe the only point of all this living was to keep those pictures in my head going for as long as I could. It was the only life I could give you. Not a day went by without.<br><br>
+                        It wasn't choice. I chose to die again and again. Just never did. Body had its own drive.<br><br>
+                        Well, the little ones will need it. Species will need it if it's to continue. That blind drive onward.<br><br>
+                        I wish them well. It's been a gift to me, at the end of it all, to behold innocence.<br><br>
+                        Goodbye, Zion.<br><br>
+                        Randall Dean Clark
+                        Feb 5th, 2053 - Jan 2124</p>
+                `,
+
+            };
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    const tabId = tab.getAttribute('data-tab');
+                    mainContent.innerHTML = content[tabId];
+
+                    // Remove active class from all tabs and add to the clicked tab
+                    tabs.forEach(t => t.classList.remove('active-tab'));
+                    tab.classList.add('active-tab');
+                });
+            });
+        });
+
+        
+    </script>
+</body>
+</html>

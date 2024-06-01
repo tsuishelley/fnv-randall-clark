@@ -1,0 +1,148 @@
+@font-face {
+    font-family: "Fixedsys";
+    src: url("fonts/FSEX302.ttf");
+}
+
+html {
+    background-color:black;
+}
+
+body {
+    background-image: url(assets/terminal-background.png);
+    background-size: 100%;
+    object-fit: cover;
+    margin: 0; /* Ensure no default margin */
+    padding: 0; /* Ensure no default padding */
+    cursor:url(assets/cursor.svg), auto;
+}
+
+h1, h2, h3{
+    font-family: "Fixedsys";
+    color:#2F9658;
+    font-size:20px;
+    text-transform: uppercase;
+    line-height:140%;
+
+}
+
+button {
+    font-family: "Fixedsys";
+    color:black;
+    font-size:20px;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    background-color:#2F9658;
+    border: solid 1px #2F9658;
+}
+
+button:hover {
+    cursor:url(assets/cursor.svg), auto;
+    color:#2F9658;
+    background-color:transparent;
+    border: solid 1px #2F9658;
+}
+
+h1 {
+    padding:2rem 2rem 0rem 2rem;
+    text-decoration:underline;
+}
+
+h2 {
+    margin:1rem 0rem 1rem 2rem;
+}
+
+
+h2 {
+    color:#2F9658;
+}
+
+p {
+    font-family: "Fixedsys";
+    color:#2F9658;
+    font-size:20px;
+    line-height:140%;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2:hover {
+    background-color:#2F9658;
+    color:black;
+    cursor:url(assets/cursor.svg), auto;
+
+}
+
+.active-tab {
+    background-color:#2F9658;
+    color:black;
+    cursor:url(assets/cursor.svg), auto;
+
+}
+
+.line{
+    border-bottom:solid #2F9658 2px;
+    margin-left:2rem;
+
+}
+
+.sidebar {
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Prevent scrolling within the sidebar */
+    width: 40%;
+    top:0;
+}
+
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    min-height: 100vh; /* Ensure the wrapper takes full height */
+
+}
+  
+.main {
+    width: 50%; /* Adjust main width to fill remaining space */
+    overflow-y: auto; /* Allow scrolling in the main content */
+    margin:2rem;
+}
+
+
+.landing-cover {
+    height: 100vh;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.intro-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    max-width: 600px;
+    height: 300px; /* Fix the height */
+    overflow: hidden; /* Prevent growing */
+}
+
+.cursor {
+    display: inline-block;
+    width: 10px;
+    animation: blink 1s steps(1) infinite;
+}
+
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+#explore-button {
+    display: none;
+    margin-top: 20px;
+}
