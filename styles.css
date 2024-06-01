@@ -16,7 +16,7 @@ body {
     cursor:url(assets/cursor.svg), auto;
 }
 
-h1, h2, h3{
+h1, h2{
     font-family: "Fixedsys";
     color:#2F9658;
     font-size:20px;
@@ -43,16 +43,10 @@ button:hover {
 
 h1 {
     padding:2rem 2rem 0rem 2rem;
-    text-decoration:underline;
 }
 
 h2 {
     margin:1rem 0rem 1rem 2rem;
-}
-
-
-h2 {
-    color:#2F9658;
 }
 
 p {
@@ -168,7 +162,7 @@ h2:hover {
         margin-left:1rem;
     }
 
-    h1, h2, h3{
+    h1, h2{
         font-size:16px;
     }
 
