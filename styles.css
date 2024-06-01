@@ -122,7 +122,6 @@ h2:hover {
     flex-direction: column;
     align-items: center; /* Center content horizontally */
     max-width: 600px;
-    width: 100%; /* Ensure content doesn't exceed maximum width */
 }
 
 .cursor {
@@ -179,7 +178,9 @@ h2:hover {
     }
 
     .intro-content{
-        padding:0 1rem;
+        padding-left:1.5rem;
+        padding-right:1.5rem;
         max-height:100vh;
+        width
     }
 }
